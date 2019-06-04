@@ -68,7 +68,7 @@ function po2array($filename) {
 function array2po($filename, $category = 'user') {
     try {
         ob_start();
-        $data = require __DIR__ . '/' . $filename;
+        $data = require $filename;
         ob_clean();
     } catch (Error $ex) {
         echo "Bad format array\n";
