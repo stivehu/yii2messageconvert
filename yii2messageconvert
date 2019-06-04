@@ -82,7 +82,7 @@ function array2po($filename, $category = 'user') {
     foreach ($data as $_data => $__data) {
         echo "msgctxt \"$category\"\n";
         echo "msgid \"" . $_data . "\"\n";
-        echo "msgstr \"\"\n";
+        echo "msgstr \"$__data\"\n";
         echo "\n";
     }
     echo "\n";
